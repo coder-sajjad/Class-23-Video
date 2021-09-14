@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.mid_content{
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+}
+
+/* Header Section CSS */
+.header_section{
+    background: rgb(52, 75, 52);
+    padding: 20px 0;
+}
+.mid_content{
+    align-items: center;
+}
+.logo_area{
+    width: 20%;
+}
+.logo_area h2 a{
+    text-decoration: none;
+    color: red;
+	font-weight: 600;
+}
+.menu_area{
+    width: 80%;
+}
+.menu_area ul{
+    display: flex;
+    justify-content: end;
+}
+.menu_area ul li{
+    list-style: none;
+    position: relative;
+}
+.menu_area ul li a {
+	padding: 23px  28px;
+	color: #ddd;
+	text-decoration: none;
+	font-size: 19px;
+	position: relative;
+    z-index: 1;
+    transition: .5s;
+}
+.menu_area > ul > li > a::after{
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    z-index: -1;
+}
+.menu_area > ul > li > a:hover::after{
+    width: 50%;
+}
+.menu_area > ul > li > a::before{
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .5s;
+    z-index: -1;
+}
+.menu_area > ul > li > a:hover::before{
+    width: 50%;
+}
+.menu_area ul li a:hover{
+    color: #fff;
+}
+
+/* Droup Down Menu CSS */
+.menu_area ul li ul {
+	position: absolute;
+	top: 4rem;
+	left: 0;
+	width: 240px;
+	background: rgb(52, 75, 52);
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	border-top: 5px solid red;
+	opacity: 0;
+	visibility: hidden;
+	transition: .5s;
+	transform: translateY(0);
+}
+.menu_area ul li ul li{
+    display: block;
+    transition: .3s;
+}
+.menu_area ul li ul li a{
+    display: block;
+    padding: 10px 0;
+}
+.menu_area ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-20px);
+}
+.menu_area ul li ul li:hover a{
+    background:red;
+    letter-spacing: 1px;
+}
+
+/* Slider Section CSS */
+.slider_section{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+.slider_width01{
+    width: 30%;
+    border: 2px solid red;
+    height: 200px;
+}
+
+/* About Section CSS */
+.about_section{
+    padding: 50px 0;
+    background: #fafafa;
+    display: flex;
+    justify-content: space-evenly;
+}
+.about_01{
+    width: 35%;
+}
+.about_01 img{
+    width: 100%;
+}
+.about_02 {
+	width: 58%;
+	height: 300px;
+}
+.about_02 h1 {
+	font-size: 40px;
+}
+.about_02 p {
+	font-size: 20px;
+	padding-top: 10px;
+	line-height: 28px;
+	color: #444;
+    text-align: justify;
+}
+.about_02 ul{
+    list-style: none;
+    margin-top: 20px;
+}
+.about_02 ul li{
+    display: block;
+}
+.about_02 ul li a {
+	text-decoration: none;
+	color: #111;
+	padding: 3px 0;
+	display: inline-block;
+	font-size: 18px;
+    position: relative;
+}
+.about_02 > a {
+	display: inline-block;
+	background: red;
+	padding: 15px 28px;
+	font-size: 18px;
+	text-decoration: none;
+	margin-top: 12px;
+	border-radius: 7px;
+	color: #fff;
+    transition: .5s;
+}
+.about_02 > a:hover{
+    background: #000;
+    color: #fff;
+}
+
+/* Blog Section CSS */
+.blog_section{
+    padding: 70px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.blog_01{
+    width: 25%;
+    height: 200px;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.flex_brow{
+    width: 40%;
+}
+
+/* Footer Section CSS */
+.footer_section{
+    padding: 20px 0;
+    background: #111;
+}
+.footer_section p{
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+}
